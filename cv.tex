@@ -1,0 +1,84 @@
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+% 
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[10pt,a4paper]{moderncv}
+% moderncv themes
+% \moderncvtheme[orange]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[red]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+\usepackage{graphicx}
+% replace by the encoding you are using
+%\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+% \addtolength{\voffset}{-10cm}
+% \addtolength{\textheight}{8cm}
+
+ \setlength{\hintscolumnwidth}{2.7cm}						% if you want to change the width of the column with the dates
+
+% \AtBeginDocument{\setlength{\maketitlenamewidth}{10cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}
+
+% personal data
+\firstname{Sylvain}
+\familyname{Guingoin}
+\title{Développeur informatique}% optional, remove the line if not wanted
+\address{8 bis rue du fort rouge}{76190 Yvetot}    % optional, remove the line if not wanted
+\mobile{06 46 03 24 79}                    % optional, 
+\email{sylvain.guingoin@gmail.com}                      % optional, remove the line if not wanted
+\extrainfo{21 ans (05/11/1991)\\
+  Nationalité française\\Permis B} % optional, remove the line if not wanted
+% \photo[64pt]{photo_cv2.JPG}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+
+% \nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+% ----------------------------------------------------------------------------------
+% content
+% ----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Formation}
+
+\cventry{depuis 2011}{École d'ingénieur}{}{Institut National des Sciences Appliquées (INSA) de Rouen (76)}{}{Département Architecture des Systèmes d'Information}
+\cventry{2009-2011}{BTS IRIS}{}{Lycée R. Queneau, 76190 Yvetot}{}{Informatique et Réseau pour l'Industrie et les Servies techniques}
+\cventry{2007-2009}{Bac STI Électronique}{}{Lycée R. Queneau, 76190 Yvetot}{}{Obtenu avec mention Bien}
+~\\
+
+\section{Expérience}
+\subsection{Stages}
+\cventry{Juin-Août 2013}{Stage de spécialité}{Développement d'un site intranet sur Symfony2, avec entre autre le FOSUserBundle}{Site de gestion des ressources humaines dans une société de service}{}{ABMI Technologie, 76600 Le Havre}
+\cventry{Mai-Juin 2010}{Stage BTS}{Développement d'un site de gestion de backups, avec récupération des données, etc.}{PHP pur avec beaucoup de javascript grace à JQuery}{}{Sitescom, 60000 Beauvais}
+
+\subsection{Jobs}
+\cventry{Étés 2010, 2011, 2012}{Job d'été}{Vendeur dans un magasin biologique}{Caisse, remise en rayon, réception de commande, etc.}{}{La Planète Bleue, 76190 Yvetot}
+~\\
+
+\section{Technologies utilisées}
+\cvcomputer{\textbf{Outils}}{GNU Emacs, Eclipse, SVN, GIT, Maven}{\textbf{Bureautique}}{\LaTeX, Suite Office}
+\cvcomputer{\textbf{Plateformes}}{GNU/Linux, Windows}{\textbf{Modélisation}}{UML}
+\cvcomputer{\textbf{Langages}}{Java/J2EE, C/++, HTML(4,5), PHP(Symfony2), CSS(2,3), Javascript, SQL, Android}{}{}
+~\\
+
+\section{Langue étrangère}
+\cvline{\textbf{Anglais}}{Courant (975/990 au TOEIC)}
+~\\
+
+\section{Centres d'intérêt}
+\cvline{\textbf{Musique}}{Cours de violon pendant 12 ans, cours de piano pendant 10 ans.}
+\cvline{\textbf{Informatique}}{Développement de projet personnels, tels que des serveurs amateurs de jeu (World of Warcraft, Minecraft), des sites web, etc.}
+\cvline{\textbf{Sport}}{Tennis de table en club (niveau amateur) pendant 12 ans}
+\end{document}
